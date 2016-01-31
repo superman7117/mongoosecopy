@@ -1,0 +1,23 @@
+{
+  "name": "mongoosecopy",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Clark Ozanne <clarkozanne@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/superman7117/mongoosecopy",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery": "~2.2.0"
+  }
+}
