@@ -5,6 +5,16 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongoose = require('mongoose');
+var mongoUrl = process.env.MONGOLAB_URI || 'mongodb://localhost/mongoosecopy'
+mongoose.connect(mongoUrl, function(err){
+  if(err){
+    console.log("mongo error", err);
+  }
+  else {
+    console.log(`MongoDB connect to ${mongoUrl}`);
+  }
+})
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
